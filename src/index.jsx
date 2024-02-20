@@ -1,7 +1,8 @@
 import { createRoot } from 'react-dom/client';
 import './global.css';
-import Episode from './components/Episode';
+import episodes from './data';
+import AllEpisodes from './components/Episode';
 
 createRoot(
   document.querySelector('#app'),
-).render(<Episode />);
+).render(<AllEpisodes episode={episodes} />);
